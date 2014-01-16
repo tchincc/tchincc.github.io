@@ -18,7 +18,17 @@ i{font-style: normal;}
 .orange{color: orange;}
 
 /* main CSS */
-.header,.main,.footer{}
+a.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 220px;border-radius: 90px;display:block;padding: 10px;
+background-color: #aaa;-webkit-transition:all 0.5s ease-out; 
+background-image: -webkit-linear-gradient(top left,#F7D489 0%,#F8E5BD 100%);}
+a.login_box:hover {-webkit-transform: rotate(360deg);}
+.login{width: 160px;
+height: 160px;
+border-radius: 85px;
+cursor: pointer;
+background-size: cover;-webkit-transition:all 0.5s ease-out; 
+background: url(images/me.jpg) no-repeat -10px -10px;}
+.login:hover {-webkit-transform: rotateY(180deg);}
 .header{position: fixed;width:100%;border-bottom: 1px solid #ccc;overflow: hidden;
 box-shadow: 0 1px 5px #ccc;background-color: #eee;
 background-image: -webkit-linear-gradient(top,#eee 0%,#fff 100%);
@@ -43,7 +53,7 @@ box-shadow: 0 1px 0 #eee inset;*position: relative;*top: -3px;
 -moz-transition:all 0.2s ease-in;
 transition:all 0.2s ease-in;}
 .header_box .list span:hover {color:#06c;background-color: #eee;}
-.main{min-height: 580px;padding:80px 0 30px;background-color: #f9f9f9;
+.main{min-width: 1200px; min-height: 751px;padding:80px 0 30px;background-color: #f9f9f9;
 background-image: -webkit-radial-gradient(#fff 0%,#ccc 100%);
 background-image: -moz-radial-gradient(#fff 0%,#ccc 100%);
 background-image: radial-gradient(#fff 0%,#ccc 100%);
@@ -103,7 +113,7 @@ background-image: -webkit-linear-gradient(top,#eef3f4 0%,#f7f8fb 100%);}
 .main_box .contact_box p{line-height: 30px;text-indent: 2em;color: #666;font-size: 13px;}
 .main_box .contact_box i{display:block;height: 30px;line-height: 30px;margin-top: 20px;color: orange;}
 
-.footer{background-color: #333;padding: 10px 0;
+.footer{min-width:1200px;background-color: #333;padding: 10px 0;
 	background-image: -webkit-linear-gradient(top,#666 0%,#333 100%);
 	background-image: -moz-linear-gradient(top,#666 0%,#333 100%);
 	background-image: linear-gradient(top,#666 0%,#333 100%);}
@@ -113,10 +123,10 @@ html{
 	-webkit-animation-name:html_page;-webkit-animation-duration:.5s;-webkit-animation-timing-function:ease-out;
 }
 @-webkit-keyframes html_page {
-	0% {-webkit-transform-origin: 50% 50%;-webkit-transform: translateX(-1700px) rotate(0deg);}
-	50% {-webkit-transform-origin: 50% 50%;-webkit-transform: translateX(200px) rotate(360deg);}
-	75% {-webkit-transform-origin: 50% 50%;-webkit-transform: translateX(-50px) rotate(360deg);}
-	100% {-webkit-transform-origin: 50% 50%;-webkit-transform: translateX(0) rotate(360deg);}
+	0% {-webkit-transform-origin: 50% 50%;-webkit-transform: rotateZ(0deg) scale(0);}
+	50% {-webkit-transform-origin: 50% 50%;-webkit-transform: rotateZ(360deg) scale(1);}
+	75% {-webkit-transform-origin: 50% 50%;-webkit-transform: rotateZ(360deg) scale(1);}
+	100% {-webkit-transform-origin: 50% 50%;-webkit-transform: rotateZ(360deg) scale(1);}
 }
 
 
