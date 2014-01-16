@@ -18,9 +18,12 @@ i{font-style: normal;}
 .orange{color: orange;}
 
 /* main CSS */
-a.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 220px;border-radius: 90px;display:block;padding: 10px;
+a.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 5%;border-radius: 90px;display:block;padding: 10px;
 background-color: #aaa;-webkit-transition:all 0.5s ease-out; 
-background-image: -webkit-linear-gradient(top left,#F7D489 0%,#F8E5BD 100%);}
+background-image: -webkit-linear-gradient(top left,#F7D489 0%,#F8E5BD 100%);
+-webkit-box-shadow:1px 1px 5px #aaa;
+-moz-box-shadow:1px 1px 5px #aaa;
+box-shadow:1px 1px 5px #aaa;}
 a.login_box:hover {-webkit-transform: rotate(360deg);}
 .login{width: 160px;
 height: 160px;
@@ -58,6 +61,7 @@ background-image: -webkit-radial-gradient(#fff 0%,#ccc 100%);
 background-image: -moz-radial-gradient(#fff 0%,#ccc 100%);
 background-image: radial-gradient(#fff 0%,#ccc 100%);
 background-image: -webkit-repeating-linear-gradient(top left, #f3f3f3, #f3f3f3 1px, #eee 2px, #eee 3px);}
+.indexmain{min-height:469px;}
 .main_box{width: 1200px;min-width: 1200px;margin: 0 auto;overflow: hidden;}
 .main_box .content,.main_box .contact{border:1px solid #aaa;border-radius: 10px;overflow: hidden;}
 .main_box .content{float: left;width:800px;background-color: #fff;}
