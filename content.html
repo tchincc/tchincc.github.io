@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="css.css" type="text/css">
 </head>
 <body>
-	<div class="header clear">
+	<div class="header">
 		<div class="header_box">
 			<a href="index.html"><div class="logo"></div></a>
-			<ul class="clear">
+			<ul class="">
 				<li><a href="index.html">首页</a></li>
 				<li><a href="">Blogs</a></li>
 				<li><a href="">联系我</a></li>
@@ -22,11 +22,11 @@
 		</div>
 	</div>
 	<div class="main">
-		<div class="main_box clear">
+		<div class="main_box">
 			<div class="content">
 				<h3>blog content</h3>
 				<div class="blog detail">
-					<div class="blog_hd clear"><h5><a href="#">测试博客测试</a></h5><span>2014.01.14</span><span>作者：Tchin</span></div>
+					<div class="blog_hd"><h5><a href="#">测试博客测试</a></h5><span>2014.01.14</span><span>作者：Tchin</span></div>
 					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
 					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
 					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
@@ -53,17 +53,17 @@
 					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
 					<div class="comment">
 						<p>评论</p>
-						<ul class="clear">
-							<li class="clear">
-								<div class="man"></div>
+						<ul class="" id="c_ul">
+							<li class="">
+								<div class="man pic"></div>
 								<div class="c_comment">这是我的第一条评论，当然评论人也是我自己。</div>
 								<div class="ex">
 									<i class="time">12:36</i>
 									<a href="javascript:;">编辑</a><a href="javascript:;">删除</a>
 								</div>
 							</li>
-							<li class="clear">
-								<div class="man"></div>
+							<li class="">
+								<div class="man pic"></div>
 								<div class="c_comment">这是我的第一条评论，当然评论人也是我自己。</div>
 								<div class="ex">
 									<i class="time">12:36</i>
@@ -71,8 +71,10 @@
 								</div>
 							</li>
 						</ul>
-						<div class="push clear">
-							<textarea cols="30" rows="10" resize="no" class="push_box"></textarea><button class="push_btn">发表评论</button>
+						<div class="push">
+							<form action="">
+								<textarea id="text" cols="30" rows="10" resize="no" class="push_box"></textarea><input type="button" class="push_btn" id="push" value="发表评论" />
+							</form>
 						</div>
 					</div>
 				</div>
@@ -91,8 +93,9 @@
 		</div>
 	</div>
 	<div class="footer">
-		<p><i></i>Copyright &copy;yu.c ctrip 2010-2014 All rights reserved.</p>
+		<p><i></i>Copyright &copy;yu.c 2010-2014 All rights reserved.</p>
 		<p>This is my first blog.Thanks,love you all.</p>
 	</div>
-</body>
+	<script type="text/javascript" src="script.js"></script>
+</body> 
 </html>
