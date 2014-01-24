@@ -18,10 +18,10 @@ i{font-style: normal;}
 .orange{color: orange;}
 
 /* main CSS */
-a.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 220px;border-radius: 90px;display:block;padding: 10px;
+.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 220px;border-radius: 90px;display:block;padding: 10px;
 background-color: #aaa;-webkit-transition:all 0.5s ease-out; 
 background-image: -webkit-linear-gradient(top left,#F7D489 0%,#F8E5BD 100%);}
-a.login_box:hover {-webkit-transform: rotate(360deg);}
+.login_box:hover {-webkit-transform: rotate(360deg);}
 .login{width: 160px;
 height: 160px;
 border-radius: 85px;
@@ -41,18 +41,18 @@ background-image: linear-gradient(top,#eee 0%,#fff 100%);}
 .header_box li{float: left;width:100px;height: 55px;line-height: 60px;text-align: center;}
 .header_box li a{color: #666;font-size: 15px;font-weight: bold;transition:all 0.2s ease-in;}
 .header_box li a:hover{font-size:20px;cursor: pointer;color: #6cf;}
-.header_box .list{float: right;height: 27px;line-height: 27px;margin: 14px 0;}
-.header_box .list input{width: 150px;height: 25px;line-height:25px;padding-left: 10px;border-radius: 5px 0 0 5px;box-shadow: 1px 1px 3px #ccc inset;
+.list{float: right;height: 27px;line-height: 27px;margin: 14px 0;}
+.list input{width: 150px;height: 25px;line-height:25px;padding-left: 10px;border-radius: 5px 0 0 5px;box-shadow: 1px 1px 3px #ccc inset;
 -webkit-transition: width 0.5s ease;
 -moz-transition: width 0.5s ease;
 transition: width 0.5s ease;}
-.header_box .list input:focus {outline: 0;width:200px;}
-.header_box .list span{height: 25px;line-height:24px;display:inline-block;border: 1px solid #aaa;padding: 0 10px;cursor:pointer;background-color: #06c;border-radius: 0 5px 5px 0;
+.list input:focus {outline: 0;width:200px;}
+.list span{height: 25px;line-height:24px;display:inline-block;border: 1px solid #aaa;padding: 0 10px;cursor:pointer;background-color: #06c;border-radius: 0 5px 5px 0;
 box-shadow: 0 1px 0 #eee inset;*position: relative;*top: -3px;
 -webkit-transition:all 0.2s ease-in;
 -moz-transition:all 0.2s ease-in;
 transition:all 0.2s ease-in;}
-.header_box .list span:hover {color:#06c;background-color: #eee;}
+.list span:hover {color:#06c;background-color: #eee;}
 .main{min-width: 1200px; min-height: 751px;padding:80px 0 30px;background-color: #f9f9f9;
 background-image: -webkit-radial-gradient(#fff 0%,#ccc 100%);
 background-image: -moz-radial-gradient(#fff 0%,#ccc 100%);
@@ -74,11 +74,11 @@ background-image: -webkit-repeating-linear-gradient(top left, #f3f3f3, #f3f3f3 1
 .content .detail{width:1120px;padding: 20px 35px 36px 30px;}
 .content .detail img{border: 1px dashed #eee;margin: 5px 0;}
 .content .detail ol{padding: 5px 30px;}
-.content ul.blog_list li{width: 735px;height: 160px;padding: 0 30px 0 35px;
+.content .blog_list li{width: 735px;height: 160px;padding: 0 30px 0 35px;
 -webkit-transition: all 0.3s ease-out;
 -moz-transition: all 0.3s ease-out;
 transition: all 0.3s ease-out;}
-.content ul.blog_list li:hover{background-color: #f3f3ff;}
+.content .blog_list li:hover{background-color: #f3f3ff;}
 .content .blog_hd{cursor: pointer;overflow: hidden;}
 .content .blog_hd .w_title{width:705px;height: 20px;line-height: 20px;padding: 5px 10px;}
 .content textarea.w_content{width:705px;padding: 5px 10px;min-height: 500px;margin: 20px 0;}
@@ -90,32 +90,32 @@ transition: all 0.3s ease-out;}
 .content .code{border: 1px solid #ccc;padding: 3px 5px;margin: 0 5px;font-family: monospace;color: #fff;background-color: #333;}
 .content pre{width: 1120px;padding: 10px 0;margin: 10px 0;color: #fff;font-family: cursive;background-color: #333;}
 .content pre i{color: #2ACFDF;}
-.content .comment{width: 1120px;padding: 10px 0}
-.content .comment ul{overflow: hidden;}
-.content .comment p{color: #333;}
-.content .comment li{margin: 15px 0 0 20px;overflow: hidden;}
-.content .comment li .man{float:left;width: 50px;height: 50px;line-height: 50px;text-align: center;color:#999;border-radius: 25px;border:1px solid #aaa;margin: 10px 0 0 5px;overflow:hidden;cursor: pointer;}
-.content .comment li .pic{background-size: cover;background-image: url(images/me.jpg);
+.comment{width: 1120px;padding: 10px 0}
+.comment ul{overflow: hidden;}
+.comment p{color: #333;}
+.comment li{margin: 15px 0 0 20px;overflow: hidden;}
+.comment li .man{float:left;width: 50px;height: 50px;line-height: 50px;text-align: center;color:#999;border-radius: 25px;border:1px solid #aaa;margin: 10px 0 0 5px;overflow:hidden;cursor: pointer;}
+.comment li .pic{background-size: cover;background-image: url(images/me.jpg);
 -webkit-transition:all 0.3s ease-in;
 -moz-transition:all 0.3s ease-in;
 transition:all 0.3s ease-in;}
-.content .comment li .pic:hover {
+.comment li .pic:hover {
 -webkit-transform: rotate(360deg);
 -moz-transform: rotate(360deg);
 transform: rotate(360deg);}
-.content .comment li .c_comment{float:left;width: 560px;min-height: 50px;line-height:30px;color:#666;padding: 10px 10px 10px 20px;}
-.content .comment li .ex{float:right;width: 60px;text-align: center;margin: 10px 5px 0 0;}
-.content .comment li .ex i.time{width: 60px;color: #999;}
-.content .comment li .ex a{height:20px;line-height:20px;display:inline-block;margin:0 3px;color: #999;}
-.content .comment li .ex a:hover,.content .comment li .ex i:hover {color: #333;}
-.content .comment .push{width: 1085px;padding: 20px 5px 20px 30px;overflow: hidden;}
-.content .comment .push .push_box{float: left;width: 960px;height: 60px;line-height: 30px;font-size: 13px;padding: 5px 10px;border: 1px solid #ddd;
+.comment li .c_comment{float:left;width: 560px;min-height: 50px;line-height:30px;color:#666;padding: 10px 10px 10px 20px;}
+.comment li .ex{float:right;width: 60px;text-align: center;margin: 10px 5px 0 0;}
+.comment li .ex i.time{width: 60px;color: #999;}
+.comment li .ex a{height:20px;line-height:20px;display:inline-block;margin:0 3px;color: #999;}
+.comment li .ex a:hover,.comment li .ex i:hover {color: #333;}
+.comment .push{width: 1085px;padding: 20px 5px 20px 30px;overflow: hidden;}
+.comment .push .push_box{float: left;width: 960px;height: 60px;line-height: 30px;font-size: 13px;padding: 5px 10px;border: 1px solid #ddd;
 box-shadow: 1px 1px 5px #eee inset;}
-.content .comment .push .push_btn{float: right;width: 70px;height: 70px;border: 1px solid #ccc;border-radius:10px;font-weight:bold;color:#555;cursor: pointer;
+.comment .push .push_btn{float: right;width: 70px;height: 70px;border: 1px solid #ccc;border-radius:10px;font-weight:bold;color:#555;cursor: pointer;
 box-shadow: 1px 1px 5px #aaa;
 background-image: -webkit-linear-gradient(top,#eef3f4 0%,#f7f8fb 100%);}
-.content .comment .push .push_btn:hover{color:orange;background-image: -webkit-linear-gradient(top,#f7f8fb 0%,#eef3f4 100%);}
-.content .comment .push .push_btn:focus{outline: 0;}
+.comment .push .push_btn:hover{color:orange;background-image: -webkit-linear-gradient(top,#f7f8fb 0%,#eef3f4 100%);}
+.comment .push .push_btn:focus{outline: 0;}
 
 .contact_box{width: 270px;min-width: 200px;min-height:500px;padding:20px 15px 20px;background-color: #fff;}
 .contact_box img{margin: 0 auto;width:175px;display: block;margin-bottom:20px;padding: 5px;border: 1px solid #ccc;}

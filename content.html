@@ -38,10 +38,10 @@
 						<li>命名各种狗屁不通，还是很奇怪的。说实在的，英文还是好好充充电不枉费了CET-6的称号，否则还影响工作的说。。0.0；</li>
 						<li>国际网站由于会出现多语言的问题，扩展性很强，因此写样式的时候，尽量不要把宽高定死，留出扩展需求，以便后期更改。不设宽度是为了响应式media query，不设高度是 为了多语言出现的多行现象，设一个line-height已经可以解决居中和间距的问题了，如果不允许出现多行，那就文字截断，不过这些都是要和交互沟通的；</li>
 						<li>用<span class="code">&lt;span class="boundary"&gt;|&lt;/span&gt;</span>来控制“|”分界线的样式，不要用“& nbsp；”</li>
-						<li>表单元素用&lt;label&gt;标签包起来；</li>
+						<li>文字点击引起表单focus的表单元素，要用&lt;label&gt;标签包起来，比如radio,checkbox等等；</li>
 						<li>不要用nocurrent这种样式名控制hover状态，要给全体加上hover，然后current样式上再改hover。而且所有的current状态都要把cursor手型改回default状态；</li>
 						<li>nav导航，不要老是用ul>li，考虑能不能使用几个a标签解决;</li>
-						<li>a标签里的href不要写"#"，"#"是空页面，用<span class="code">&lt;a href="javascript:;"&gt;</span>表示不执行任何操作;</li>
+						<li>a标签里的href不要写"#"，"#"是锚点，会有跳转的，用<span class="code">&lt;a href="javascript:;"&gt;</span>表示不执行任何操作;</li>
 						<li>表单元素中，select不适用min-width样式，因为在IE7中没有用；</li>
 						<li>box-shadow,gradient等样式会影响解析，能用图片的用图片代替；而且一定要用这些样式的话，要加上browser内核前缀，-webkit-,-moz-,-ms-,以及不加前缀的情况；</li>
 						<li>&lt;head&gt;标签的title要写当前页面的名字，不要写“#”；</li>
