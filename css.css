@@ -86,7 +86,7 @@ transition: all 0.3s ease-out;}
 .content .about{float: right;height: 30px;line-height: 30px;margin: 0 20px;color: #999;font-size: 12px;}
 .content p{line-height: 30px;color: #666;font-size: 14px;}
 .content a{font-size: 12px;}
-.content li{color: #3E93E9;line-height: 25px;margin: 5px 0;}
+.content li{color: #3E93E9;line-height: 25px;}
 .content .code{border: 1px solid #ccc;padding: 3px 5px;margin: 0 5px;font-family: monospace;color: #fff;background-color: #333;}
 .content pre{width: 1120px;padding: 10px 0;margin: 10px 0;color: #fff;font-family: cursive;background-color: #333;}
 .content pre i{color: #2ACFDF;}
