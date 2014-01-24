@@ -69,12 +69,12 @@ background-image: -webkit-repeating-linear-gradient(top left, #f3f3f3, #f3f3f3 1
 	background: linear-gradient(#eaeaea,#fff);}
 .main_box h3:hover {color: #6cf;}
 .content .blog_list{width: 800px;min-height: 500px;}
-.content .blog{width: 735px;min-height: 120px;padding: 20px 0;border-bottom: 1px dashed #eee;}
+.content .blog{width: 735px;padding: 20px 0;border-bottom: 1px dashed #eee;}
 .content .writin_box{padding: 20px 35px 36px 30px;}
 .content .detail{width:1120px;padding: 20px 35px 36px 30px;}
 .content .detail img{border: 1px dashed #eee;margin: 5px 0;}
 .content .detail ol{padding: 5px 30px;}
-.content .blog_list li{width: 735px;height: 160px;padding: 0 30px 0 35px;
+.content .blog_list li{width: 735px;padding: 0 30px 0 35px;
 -webkit-transition: all 0.3s ease-out;
 -moz-transition: all 0.3s ease-out;
 transition: all 0.3s ease-out;}
