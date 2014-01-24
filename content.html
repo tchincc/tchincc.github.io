@@ -26,31 +26,64 @@
 			<div class="content contentHTML">
 				<h3>我的博客</h3>
 				<div class="blog detail">
-					<a href="#"><div class="blog_hd"><h5>测试博客测试</h5><span>2014.01.14</span><span>作者：Tchin</span></div></a>
-					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
-					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
-					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
-					<pre>
-	.main_box .content .blog_hd{<i>cursor: pointer;</i>}
-	.main_box .content h5{<i>float:left;
-		width: 200px;
-		height: 30px;
-		color:orange;
-		font-size:17px;
-		line-height: 30px;
-		display: inline-block;</i>}
-	.main_box .content span{<i>float: right;
-		height: 30px;
-		line-height: 30px;
-		margin: 0 20px;
-		color: #999;
-		font-size: 12px;</i>}
-	.main_box .content p{<i>line-height: 30px;
-		color: #999;
-		font-size: 13px;</i>}
-	.main_box .content a{<i>font-size: 12px;</i>}
-					</pre>
-					<p>这是我的第一条博客，欢迎来到My world。在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.在这里你得到的只有testtesttest.谢谢合作...</p>
+					<a href="#"><div class="blog_hd"><h5>Practise Summary</h5><span class="about">2014.01.24</span><span class="about">作者：Tchin</span></div></a>
+					<img src="images/head.png" alt="" />
+					<p>这是小志给我这两次练习留下的一条总结，挂在这里，就当一个警钟长鸣吧...</p>
+					<p>首先呢，我还是总结一下这几次问题：</p>
+					<ol>
+						<li>没有看需求，遇到都需要与交互沟通，在网页中掺杂了太多个人的想法，以至于出现各种尺寸不对，或各处多一块少一块的问题；</li>
+						<li>注意IE6,7的bug，这是很严重的兼容问题，每次都会出现在IE7里的各类问题没有很好地解决；比如:before,:after不兼容。还有ico各种错位；</li>
+						<li>不要加太多的空标签，会影响网页解析。但是该分块的标签还是要加的，以及ico需要用标签添加，用伪类:before,:after添加ico会使IE低版本出现bug。</li>
+						<li>写模块化的css，不要把每个样式的使用范围定在一个标签里；</li>
+						<li>命名各种狗屁不通，还是很奇怪的。说实在的，英文还是好好充充电不枉费了CET-6的称号，否则还影响工作的说。。0.0；</li>
+						<li>国际网站由于会出现多语言的问题，扩展性很强，因此写样式的时候，尽量不要把宽高定死，留出扩展需求，以便后期更改。不设宽度是为了响应式media query，不设高度是 为了多语言出现的多行现象，设一个line-height已经可以解决居中和间距的问题了，如果不允许出现多行，那就文字截断，不过这些都是要和交互沟通的；</li>
+						<li>用<span class="code">&lt;span class="boundary"&gt;|&lt;/span&gt;</span>来控制“|”分界线的样式，不要用“& nbsp；”</li>
+						<li>表单元素用&lt;label&gt;标签包起来；</li>
+						<li>不要用nocurrent这种样式名控制hover状态，要给全体加上hover，然后current样式上再改hover。而且所有的current状态都要把cursor手型改回default状态；</li>
+						<li>nav导航，不要老是用ul>li，考虑能不能使用几个a标签解决;</li>
+						<li>a标签里的href不要写"#"，"#"是空页面，用<span class="code">&lt;a href="javascript:;"&gt;</span>表示不执行任何操作;</li>
+						<li>表单元素中，select不适用min-width样式，因为在IE7中没有用；</li>
+						<li>box-shadow,gradient等样式会影响解析，能用图片的用图片代替；而且一定要用这些样式的话，要加上browser内核前缀，-webkit-,-moz-,-ms-,以及不加前缀的情况；</li>
+						<li>&lt;head&gt;标签的title要写当前页面的名字，不要写“#”；</li>
+						<li>login_bar部分的ico,"|",a标签，以及span文字都可以用<span class="code">vertical_align:middle；</span>来对齐；这样在各个浏览器不会出现错位的现象；</li>
+						<li>文字居中可以不一定用height,line-height,有时候只有line-height就可以居中，或者可以不定高，用上下padding来对齐；</li>
+						<li>关于面包屑crumb，除了当前页，所有前面的都要加上链接a标签。而且，用"& gt；"而不是用键盘上的">";</li>
+						<li>屏幕较窄，banner较宽的情况，在media query的时候给banner加上margin-left负值突出banner里面的重要部分；</li>
+						<li>h1~h6这是SEO可能会修改的，在样式表中不要用这标签名定义；</li>
+						<li>命名规则，大块内容用结构命名，但不要出现top,left之类影响后期更改的命名方式；细节部分根据内容命名；</li>
+						<li>最后就是要把每一次练习当成一种需求去对待。</li>
+					</ol>
+					<p>下面是图片方面的问题：</p>
+					<ol>
+						<li>CSS sprits必须要有归类，当前页的图标归一类，后期也要用到的图标归一类ico_base.png，logo可以和ico_base.png放在一起；国旗放在ico里面；</li>
+						<li>logo一般用h1标签加一个a链接包括，要用到文字隐藏技术，以便没有样式的时候也能看到“携程旅行网”五个大字；</li>
+						<li>临时图片用zzz-前缀；</li>
+						<li>一般ico图标保存为png-8,如果有不和谐，改为png-24,photoshop中存储用web格式存储；</li>
+						<li>一般在网页上嵌入的img图片用jpg,因为png8只有256种颜色，用jpg显示效果好一点；</li>
+						<li>所有img嵌入的图片一般都有链接的，不要忘记加上hover状态和a链接；</li>
+					</ol>
+					<p>以下是梁总关于图片方面的解释：</p>
+					<ol>
+						<li>用JPG的情况---不要求透明  PNG8显示效果较差</li>
+						<li>图标的话，因为不一定都是白底，有黄色底红色等底色可能情况，所以一般都是用PNG8</li>
+						<li>图片是由各种颜色组成的，PNG8只有256种颜色所以无法逼真模拟出来，JPG PNG24 应该是不止256种颜色都有所以是完美效果的，所以PNG8是会出现一点点那种效果，具体看图片本身颜色的复杂度，像如果颜色比较单调只有黑白啥的就完全是看不出来。</li>
+					</ol>
+					<p>友情链接:</p>
+					<ol>
+						<li>怎样使用ps切图：<a href="http://wenku.it168.com/d_001257619.shtml" target="_blank">http://wenku.it168.com/d_001257619.shtml</a></li>
+						<li>CSS常见板式布局：<a href="http://www.aa25.cn/layout/index.shtml" target="_blank">http://www.aa25.cn/layout/index.shtml" target="_blank</a></li>
+						<li>清除浮动：<a href="http://www.twinsenliang.net/skill/20090413.html" target="_blank">http://www.twinsenliang.net/skill/20090413.html</a></li>
+						<li>浮动的影响：<a href="http://www.w3cplus.com/css/float.html" target="_blank">http://www.w3cplus.com/css/float.html</a></li>
+						<li>垂直居中：
+							<a href="http://www.w3cplus.com/css/vertically-center-content-with-css" target="_blank">http://www.w3cplus.com/css/vertically-center-content-with-css</a><br/>
+							<a href="http://ued.ctrip.com/blog/?p=1122" target="_blank">http://ued.ctrip.com/blog/?p=1122</a><br/>
+							<a href="http://www.zhangxinxu.com/study/200908/img-text-vertical-align.html" target="_blank">http://www.zhangxinxu.com/study/200908/img-text-vertical-align.html</a>
+						</li>
+						<li>Web图片格式：<a href="" target="_blank">http://bigc.at/png.orz</a></li>
+						<li>常见命名：<a href="" target="_blank">http://www.knowsky.com/344669.html</a></li>
+						<li>代码规范：<a href="http://conf.ctripcorp.com/pages/viewpage.action?pageId=7510720" target="_blank">http://conf.ctripcorp.com/pages/viewpage.action?pageId=7510720</a></li>
+					</ol>
+					<p></p>
 					<div class="comment">
 						<p>评论</p>
 						<ul class="" id="c_ul">
@@ -64,7 +97,7 @@
 							</li>
 							<li class="">
 								<div class="man pic"></div>
-								<div class="c_comment">这是我的第一条评论，当然评论人也是我自己。</div>
+								<div class="c_comment">此网站是静态页面，什么后台都木有加上，所以评论是用不了的哦~~~</div>
 								<div class="ex">
 									<i class="time">12:36</i>
 									<a href="javascript:;">编辑</a><a href="javascript:;">删除</a>
