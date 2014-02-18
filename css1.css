@@ -18,10 +18,10 @@ i{font-style: normal;}
 .orange{color: orange;}
 
 /* main CSS */
-a.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 220px;border-radius: 90px;display:block;padding: 10px;
+.login_box{width: 160px;height: 160px;margin: 0 auto;margin-top: 220px;border-radius: 90px;display:block;padding: 10px;
 background-color: #aaa;-webkit-transition:all 0.5s ease-out; 
 background-image: -webkit-linear-gradient(top left,#F7D489 0%,#F8E5BD 100%);}
-a.login_box:hover {-webkit-transform: rotate(360deg);}
+.login_box:hover {-webkit-transform: rotate(360deg);}
 .login{width: 160px;
 height: 160px;
 border-radius: 85px;
@@ -35,7 +35,7 @@ background-image: -webkit-linear-gradient(top,#eee 0%,#fff 100%);
 background-image: -moz-linear-gradient(top,#eee 0%,#fff 100%);
 background-image: -ms-linear-gradient(top,#eee 0%,#fff 100%);
 background-image: linear-gradient(top,#eee 0%,#fff 100%);}
-.header_box{width:1200px;min-width:1000px;height: 55px;line-height: 55px;color:#fff;margin: 0 auto;overflow: hidden;}
+.header_box{width: 100%;height: 55px;line-height: 55px;color:#fff;margin: 0 auto;overflow: hidden;}
 .header_box .logo{float: left;width:35px;height: 50px;background: url(images/ico.png) no-repeat 0 0;background-size: cover;}
 .header_box ul{float:left;height: 55px;margin: 0 30px;overflow: hidden;}
 .header_box li{float: left;width:100px;height: 55px;line-height: 60px;text-align: center;}
@@ -53,12 +53,12 @@ box-shadow: 0 1px 0 #eee inset;*position: relative;*top: -3px;
 -moz-transition:all 0.2s ease-in;
 transition:all 0.2s ease-in;}
 .header_box .list span:hover {color:#06c;background-color: #eee;}
-.main{min-width: 1200px; min-height: 751px;padding:80px 0 30px;background-color: #f9f9f9;
+.main{min-height: 751px;padding:80px 0 30px;background-color: #f9f9f9;
 background-image: -webkit-radial-gradient(#fff 0%,#ccc 100%);
 background-image: -moz-radial-gradient(#fff 0%,#ccc 100%);
 background-image: radial-gradient(#fff 0%,#ccc 100%);
 background-image: -webkit-repeating-linear-gradient(top left, #f3f3f3, #f3f3f3 1px, #eee 2px, #eee 3px);}
-.main_box{width: 1200px;min-width: 1200px;margin: 0 auto;overflow: hidden;}
+.main_box{width: 100%;margin: 0 auto;overflow: hidden;}
 .main_box .content,.main_box .contact{border:1px solid #aaa;border-radius: 10px;overflow: hidden;}
 .main_box .content{float: left;width:800px;background-color: #fff;}
 .main_box .contentHTML{width: 1198px}
@@ -119,12 +119,11 @@ background-image: -webkit-linear-gradient(top,#eef3f4 0%,#f7f8fb 100%);}
 .main_box .contact_box p{line-height: 30px;text-indent: 2em;color: #666;font-size: 13px;}
 .main_box .contact_box i{display:block;height: 30px;line-height: 30px;margin-top: 20px;color: orange;}
 
-.footer{min-width:1200px;background-color: #333;padding: 10px 0;
+.footer{background-color: #333;padding: 10px 0;
 	background-image: -webkit-linear-gradient(top,#666 0%,#333 100%);
 	background-image: -moz-linear-gradient(top,#666 0%,#333 100%);
 	background-image: linear-gradient(top,#666 0%,#333 100%);}
 .footer p{color:#fff;height: 33px;line-height: 33px;text-align: center;}
-/*.footer p i{width: 30px;height: 33px;display:inline-block;margin:0 5px;background: url(images/ico.png) no-repeat -35px 0;}*/
 body{
 	-webkit-animation-name:html_page;-webkit-animation-duration:.5s;-webkit-animation-timing-function:ease-out;
 }
@@ -133,6 +132,10 @@ body{
 	50% {-webkit-transform: rotateZ(360deg) scale(1);}
 	75% {-webkit-transform: rotateZ(360deg) scale(1);}
 	100% {-webkit-transform: rotateZ(360deg) scale(1);}
+}
+@media screen and (max-width:700px) {
+	.login_box{margin-top: 50px;}
+	.main{min-height: 400px;}
 }
 
 
