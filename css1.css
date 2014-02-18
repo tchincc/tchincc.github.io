@@ -27,7 +27,7 @@ height: 160px;
 border-radius: 85px;
 cursor: pointer;
 background-size: cover;-webkit-transition:all 0.5s ease-out; 
-background: url(images/me.jpg) no-repeat -10px -10px;}
+background: url(images/me.jpg) no-repeat -5px -5px;}
 .login:hover {-webkit-transform: rotateY(180deg);}
 .header{position: fixed;width:100%;border-bottom: 1px solid #ccc;overflow: hidden;
 box-shadow: 0 1px 5px #ccc;background-color: #eee;
